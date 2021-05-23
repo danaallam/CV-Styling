@@ -211,3 +211,58 @@ h4{
 #contact h3{
     display: none;
 }
+
+@media screen and (max-width: 600px) {
+    header div{
+        display: unset;
+    }
+
+    hgroup, figure{
+        margin-left: 10%;
+    }
+
+    .content{
+        grid-template-areas:
+            'header'
+            'right'
+            'menu' 
+            'main'
+            'footer';
+        padding-top: 5%;
+        margin-right: 0;
+        padding-left: 5%;
+        padding-right: 20px;
+    }
+
+    #contact h3{
+        display: list-item; 
+    }
+
+    #hobbies h3{
+        width: unset;
+    }
+
+    .contacts{
+        position: unset;
+        width: 100%;
+    }
+
+    dt {
+        width: 27%;
+    }
+
+    dd {
+        color: red;
+        width: 73%;
+        background: white;
+    }
+
+    .contact-skype dd{
+        color: black;
+    }
+
+    p{
+        width: unset;
+        /* text-align: justify; */
+    }
+}
