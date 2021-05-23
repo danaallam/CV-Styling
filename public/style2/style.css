@@ -196,3 +196,61 @@ h4, .experience-date-separator{
     background-image: url('../images/facebook.png');
     background-size: 100%;    
 }
+
+@media screen and (max-width: 600px) {
+    body{
+        padding: 35px 35px;
+    }
+
+    img{
+        display: none;
+    }
+
+    #about p{
+        width: 100%;
+    }
+
+    .skill{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 1%;
+    }
+
+    #competencies, #experiences, #education, #hobbies{
+        display: unset;
+    }
+    
+    #competencies h3, #experiences h3, #education h3, #hobbies h3{ 
+        border-right: unset;
+        border-bottom: 1px solid black;
+        display: block;
+        width: 30%;
+    }
+    
+    .experience-details{
+        top: 0;
+    }
+
+    .contact-skype{
+        display: none;
+    }
+
+    .contacts{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contact-phone .contact-value{
+        margin-left: 0;
+    }
+
+    .contact-github .contact-value{
+        margin-left: 0;
+    }
+
+    .skills-primary .skill span{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+}
